@@ -1,9 +1,8 @@
 // React
 import React, { useState } from 'react';
-import logo from './logo.svg';
 
 // Styles
-import './App.css';
+
 
 // Components
 import About from './components/About';
@@ -15,14 +14,35 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [home, setHome] = useState(true);
-  const [about, setAbout] = useState(false);
-  const [store, setStore] = useState(false);
+  // States
+  const [home, setHome] = useState();
+  const [about, setAbout] = useState();
+  const [store, setStore] = useState();
+
+  // Handle Navigation
 
   if (home === true) {
     return (
       <>
-        <Header />
+        <Header 
+          handleHome={() => {
+            setHome(true);
+            setAbout(false);
+            setStore(false);
+            }} 
+            
+          handleAbout={() => {
+            setHome(false);
+            setAbout(true);
+            setStore(false);
+          }}
+
+          handleStore={() => {
+            setHome(false);
+            setAbout(false);
+            setStore(true);
+          }}
+            />
         <Home />
         <Footer />
       </>
@@ -30,7 +50,25 @@ function App() {
   } else if (about === true) {
     return (
       <>
-        <Header />
+        <Header 
+          handleHome={() => {
+            setHome(true);
+            setAbout(false);
+            setStore(false);
+            }} 
+            
+          handleAbout={() => {
+            setHome(false);
+            setAbout(true);
+            setStore(false);
+          }}
+
+          handleStore={() => {
+            setHome(false);
+            setAbout(false);
+            setStore(true);
+          }}
+            />
         <About />
         <Footer />
       </>
@@ -38,29 +76,54 @@ function App() {
   } else if (store === true) {
     return (
       <>
-        <Header />
+        <Header 
+          handleHome={() => {
+            setHome(true);
+            setAbout(false);
+            setStore(false);
+            }} 
+            
+          handleAbout={() => {
+            setHome(false);
+            setAbout(true);
+            setStore(false);
+          }}
+
+          handleStore={() => {
+            setHome(false);
+            setAbout(false);
+            setStore(true);
+          }}
+            />
         <Store />
         <Footer />
       </>
     )
   } else {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <>
+        <Header 
+          handleHome={() => {
+            setHome(true);
+            setAbout(false);
+            setStore(false);
+            }} 
+            
+          handleAbout={() => {
+            setHome(false);
+            setAbout(true);
+            setStore(false);
+          }}
+
+          handleStore={() => {
+            setHome(false);
+            setAbout(false);
+            setStore(true);
+          }}
+            />
+        <Home />
+        <Footer />
+    </>
     )
   }
 }
