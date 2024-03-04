@@ -7,9 +7,17 @@ import styles from '../styles/styles.module.css';
 export default function Home() {
     return (
         <main>
-            <h1>Home</h1>
+            <section>
+                <div style={{justifyContent: 'center'}} className={styles.container}>
+                    <div>
+                        <h1>Discover the Experience of Fulldive Vr</h1>
+                        <p>Journey to any universe you can imagine.</p>
+                    </div>
+                </div>
+                
+            </section>
 
-            <p>This is the home page in a main tag</p>
+            
 
             <div className={styles.container}>
                 <p>Some text</p>

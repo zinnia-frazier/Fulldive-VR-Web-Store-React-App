@@ -71,6 +71,12 @@ button:active {
     grid-column: 11 / span 1;
 }
 
+#main-heading {
+    justify-content: center;
+    align-items: center;
+    border: 5px solid red;
+}
+
 /* Page Aethetics
 ================================================= */
 header {
