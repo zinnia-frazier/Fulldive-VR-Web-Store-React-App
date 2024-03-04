@@ -70,6 +70,27 @@ export default function Home(props) {
                     <Card imageSrc={placeholder} itemName='Green' handleStore={props.handleStore} />
                 </div>
             </section>
+
+            <section>
+                <div className={styles.container}>
+                    <div style={{justifyContent: 'center'}}>
+                        <h2>Get the Latest News</h2>
+                    </div>
+                </div>
+
+                <div className={styles.container}>
+                    <div style={{justifyContent: 'center'}} className={styles.formContainer}>
+                        <form>
+                            <label for='email'>Email</label>
+
+                            <br />
+
+                            <input className={styles.email} type='email' id='email' placeholder='Email' />
+                            <input className={styles.btnSecondary} type='submit' id='submit' value='Submit' />
+                        </form>
+                    </div>
+                </div>
+            </section>
             
         </main>
     )

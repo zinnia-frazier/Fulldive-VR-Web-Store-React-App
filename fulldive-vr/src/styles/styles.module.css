@@ -12,44 +12,83 @@ h1, h2, h3, p, li {
 
 /* HTML Components
 ================================================= */
-button {
-    border: 2px solid white;
-    background-color: white;
-    color: green;
-    cursor: pointer;
+
+.btnPrimary {
+    background-color: hsla(90, 50%, 20%, 1);
+    color: white;
+
     box-shadow: 0.5rem 0.5rem black;
+    border: 2px solid hsla(90, 20%, 20%, 1);
+    
+    cursor: pointer;
     margin: 1rem;
     border-radius: 0.5rem;
     width: 5rem;
     height: 2rem;
 }
-button:hover {
-    border: 2px solid green;
-    background-color: green;
-    color: white;
+.btnPrimary:hover {
+    background-color: white;
+    color: hsla(90, 50%, 20%, 1);
+
+    opacity: 0.75;
+    border: 2px solid white;
 }
-button:active {
-    background-color: darkgreen;
+.btnPrimary:active {
+    opacity: 0.5;
     box-shadow: 0.25rem 0.25rem black;
 }
 
-.btnPrimary {
-    background-color: hsla(90, 50%, 20%, 1);
-    border: 2px solid hsla(90, 20%, 20%, 1);
-    color: white;
+.btnSecondary {
+    background-color: hsla(270, 50%, 20%, 1);
+    color: white; 
+
+    box-shadow: 0.5rem 0.5rem black;
+    border: 2px solid hsla(270, 20%, 20%, 1);
+
+    cursor: pointer;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 2rem;
 }
-.btnPrimary:hover {
-    background-color: hsla(90, 90%, 20%, 0.75)
+.btnSecondary:hover {
+    background-color: white;
+    color: hsla(92700, 50%, 20%, 1);
+
+    opacity: 0.75;
+    border: 2px solid white;
 }
-.btnPrimary:active {
-    background-color: hsla(90, 90%, 20%, 0.5);
+.btnSecondary:active {
+    opacity: 0.5;
+    box-shadow: 0.25rem 0.25rem black;
 }
+
+input {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.formContainer {
+    width: 50%;
+    border: 2px solid red;
+    margin: 0 auto;
+}
+.email {
+    color: hsla(90, 20%, 20%, 1);
+}
+.email:hover {
+    border: 2px solid hsla(90, 20%, 90%, 1);
+}
+
 
 /* React Components
 ================================================= */
 
 /* Page Structure
 ================================================= */
+
 .container {
     display: flex;
 }
@@ -74,10 +113,12 @@ button:active {
     border-radius: 2rem;
     max-width: 40rem;
     margin: 1rem;
+    overflow: hidden;
 }
 .card img {
     width: 100%;
     overflow: hidden;
+    height: auto;
 }
 
 .headText {

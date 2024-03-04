@@ -8,8 +8,12 @@ export default function Card(props) {
     return (
         <div className={styles.card}>
             <img src={props.imageSrc} alt='placeholder' />
-            <h3>{props.itemName}</h3>
-            <button className={styles.btnPrimary} onClick={props.handleStore}>Shop</button>
+
+            <div>
+                <h3 style={{textAlign: 'center'}} >{props.itemName}</h3>
+                <button className={styles.btnPrimary} onClick={props.handleStore}>Shop</button>
+            </div>
+            
         </div>
     )
 }
