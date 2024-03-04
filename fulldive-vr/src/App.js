@@ -1,9 +1,6 @@
 // React
 import React, { useState } from 'react';
 
-// Styles
-
-
 // Components
 import About from './components/About';
 import Home from './components/Home';
