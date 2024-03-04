@@ -17,7 +17,7 @@ button {
     background-color: white;
     color: green;
     cursor: pointer;
-    box-shadow: 10px 10px white;
+    box-shadow: 0.5rem 0.5rem black;
     margin: 1rem;
     border-radius: 0.5rem;
     width: 5rem;
@@ -29,7 +29,7 @@ button:hover {
 }
 button:active {
     background-color: darkgreen;
-    box-shadow: 5px 5px white;
+    box-shadow: 0.25rem 0.25rem black;
 }
 
 /* React Components
@@ -41,17 +41,23 @@ button:active {
     display: flex;
 }
 
+.headerContainer {
+    display: flex;
+}
+
+.block {
+    width: 50%;
+}
+
 /* Page Aethetics
 ================================================= */
 header {
-    background-color: black;
-    color: white;
+    background-color: hsla(90, 20%, 90%, 1);
     padding: 2rem;
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: hsla(90, 20%, 90%, 1);
     padding: 2rem;
 }
 
