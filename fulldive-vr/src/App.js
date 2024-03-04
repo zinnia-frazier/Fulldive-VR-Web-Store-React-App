@@ -43,7 +43,11 @@ function App() {
             setStore(true);
           }}
             />
-        <Home />
+        <Home handleStore={() => {
+          setHome(false);
+          setAbout(false);
+          setStore(true);
+        }} />
         <Footer />
       </>
     )
