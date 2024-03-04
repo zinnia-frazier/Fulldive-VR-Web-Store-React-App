@@ -9,7 +9,7 @@ export default function Card(props) {
         <div className={styles.card}>
             <img src={props.imageSrc} alt='placeholder' />
             <h3>{props.itemName}</h3>
-            <button className={styles.btnPrimary}>Shop</button>
+            <button className={styles.btnPrimary} onClick={props.handleStore}>Shop</button>
         </div>
     )
 }

@@ -59,9 +59,15 @@ export default function Home(props) {
                 </div>
 
                 <div className={styles.container}>
-                    <Card imageSrc={placeholder} itemName='Pink' />
+                    <Card imageSrc={placeholder} itemName='Pink' handleStore={props.handleStore} />
 
-                    
+                    <Card imageSrc={placeholder} itemName='Black' handleStore={props.handleStore} />
+
+                    <Card imageSrc={placeholder} itemName='Blue' handleStore={props.handleStore} />
+
+                    <Card imageSrc={placeholder} itemName='Orange' handleStore={props.handleStore} />
+
+                    <Card imageSrc={placeholder} itemName='Green' handleStore={props.handleStore} />
                 </div>
             </section>
             
