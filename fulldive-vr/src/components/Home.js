@@ -72,16 +72,13 @@ export default function Home(props) {
             </section>
 
             <section>
-                <div className={styles.container}>
-                    <div style={{justifyContent: 'center'}}>
-                        <h2>Get the Latest News</h2>
-                    </div>
-                </div>
+                <h2 style={{textAlign: 'center'}}>Get the Latest News</h2>
+                    
 
                 <div className={styles.container}>
                     <div style={{justifyContent: 'center'}} className={styles.formContainer}>
                         <form>
-                            <label for='email'>Email</label>
+                            <label for='email'><h3>Email</h3></label>
 
                             <br />
 
