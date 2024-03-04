@@ -13,7 +13,7 @@ h1, h2, h3, p, li {
 /* HTML Components
 ================================================= */
 button {
-    border: 2px solid green;
+    border: 2px solid white;
     background-color: white;
     color: green;
     cursor: pointer;
@@ -24,12 +24,17 @@ button {
     height: 2rem;
 }
 button:hover {
+    border: 2px solid green;
     background-color: green;
     color: white;
 }
 button:active {
     background-color: darkgreen;
     box-shadow: 0.25rem 0.25rem black;
+}
+
+.btnPrimary {
+    background-color: hsla(90, 20%, 20%, 1);
 }
 
 /* React Components
@@ -41,12 +46,21 @@ button:active {
     display: flex;
 }
 
-.headerContainer {
-    display: flex;
+.headerGrid {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
 }
 
 .block {
-    width: 50%;
+    border: 2px solid red;
+}
+
+.headText {
+    grid-column: 1 / span 3;
+}
+
+.headNav {
+    grid-column: 11 / span 1;
 }
 
 /* Page Aethetics
