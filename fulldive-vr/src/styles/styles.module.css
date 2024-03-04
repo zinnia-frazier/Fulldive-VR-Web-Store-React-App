@@ -34,7 +34,15 @@ button:active {
 }
 
 .btnPrimary {
-    background-color: hsla(90, 20%, 20%, 1);
+    background-color: hsla(90, 50%, 20%, 1);
+    border: 2px solid hsla(90, 20%, 20%, 1);
+    color: white;
+}
+.btnPrimary:hover {
+    background-color: hsla(90, 90%, 20%, 0.75)
+}
+.btnPrimary:active {
+    background-color: hsla(90, 90%, 20%, 0.5);
 }
 
 /* React Components
@@ -66,16 +74,16 @@ button:active {
 /* Page Aethetics
 ================================================= */
 header {
-    background-color: hsla(90, 20%, 90%, 1);
-    padding: 2rem;
+    background-color: hsla(90, 20%, 80%, 1);
+    padding: 0 2rem;
 }
 
 footer {
-    background-color: hsla(90, 20%, 90%, 1);
+    background-color: hsla(90, 20%, 80%, 1);
     padding: 2rem;
 }
 
 main {
-    background-color: lightgreen;
+    background-color: hsla(90, 20%, 90%, 1);
     padding: 2rem;
 }
