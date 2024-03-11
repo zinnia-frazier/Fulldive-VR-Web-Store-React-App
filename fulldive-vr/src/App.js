@@ -40,11 +40,13 @@ function App() {
             setStore(true);
           }}
             />
+            
         <Home handleStore={() => {
           setHome(false);
           setAbout(false);
           setStore(true);
         }} />
+
         <Footer />
       </>
     )
@@ -70,7 +72,9 @@ function App() {
             setStore(true);
           }}
             />
+
         <About />
+
         <Footer />
       </>
     )
@@ -96,7 +100,9 @@ function App() {
             setStore(true);
           }}
             />
+
         <Store />
+
         <Footer />
       </>
     )
@@ -122,7 +128,15 @@ function App() {
             setStore(true);
           }}
             />
-        <Home />
+
+        <Home 
+          handleStore={() => {
+            setHome(false);
+            setAbout(false);
+            setStore(true);
+          }}
+          />
+
         <Footer />
     </>
     )
