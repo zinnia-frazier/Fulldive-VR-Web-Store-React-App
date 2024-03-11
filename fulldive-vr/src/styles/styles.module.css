@@ -93,6 +93,8 @@ h1, h2, h3, p, li {
 
 .container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .headerGrid {
@@ -113,7 +115,7 @@ h1, h2, h3, p, li {
     background-color: hsla(270, 20%, 80%, 1);
     border: 2px solid hsla(270, 20%, 20%, 1);
     border-radius: 2rem;
-    max-width: 40rem;
+    max-width: 25rem;
     margin: 1rem;
     overflow: hidden;
 }
