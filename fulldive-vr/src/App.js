@@ -16,6 +16,8 @@ function App() {
   const [about, setAbout] = useState();
   const [store, setStore] = useState();
 
+  const [signIn, setSignIn] = useState(false);
+
   // Handle Navigation
 
   if (home === true) {
@@ -23,24 +25,34 @@ function App() {
       <>
         <Header 
           handleHome={() => {
+            setSignIn(false);
             setHome(true);
             setAbout(false);
             setStore(false);
             }} 
             
           handleAbout={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(true);
             setStore(false);
           }}
 
           handleStore={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(false);
             setStore(true);
           }}
+
+          handleSignIn={() => {
+            setSignIn(true);
+            setHome(false);
+            setAbout(false);
+            setStore(false);
+          }}
             />
-            
+
         <Home handleStore={() => {
           setHome(false);
           setAbout(false);
@@ -54,19 +66,29 @@ function App() {
     return (
       <>
         <Header 
+          handleSignIn={() => {
+            setSignIn(true);
+            setHome(false);
+            setAbout(false);
+            setStore(false);
+          }}
+
           handleHome={() => {
+            setSignIn(false);
             setHome(true);
             setAbout(false);
             setStore(false);
             }} 
             
           handleAbout={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(true);
             setStore(false);
           }}
 
           handleStore={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(false);
             setStore(true);
@@ -81,20 +103,30 @@ function App() {
   } else if (store === true) {
     return (
       <>
-        <Header 
+        <Header
+          handleSignIn={() => {
+            setSignIn(true);
+            setHome(false);
+            setAbout(false);
+            setStore(false);
+          }}
+
           handleHome={() => {
+            setSignIn(false);
             setHome(true);
             setAbout(false);
             setStore(false);
             }} 
             
           handleAbout={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(true);
             setStore(false);
           }}
 
           handleStore={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(false);
             setStore(true);
@@ -110,19 +142,29 @@ function App() {
     return (
       <>
         <Header 
+          handleSignIn={() => {
+            setSignIn(true);
+            setHome(false);
+            setAbout(false);
+            setStore(false);
+          }}
+
           handleHome={() => {
+            setSignIn(false);
             setHome(true);
             setAbout(false);
             setStore(false);
             }} 
             
           handleAbout={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(true);
             setStore(false);
           }}
 
           handleStore={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(false);
             setStore(true);
@@ -131,6 +173,7 @@ function App() {
 
         <Home 
           handleStore={() => {
+            setSignIn(false);
             setHome(false);
             setAbout(false);
             setStore(true);
