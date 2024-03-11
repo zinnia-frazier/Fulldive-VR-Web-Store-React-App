@@ -17,7 +17,7 @@ export default function Header(props) {
                         <button className={styles.btnSecondary} onClick={props.handleHome}>Home</button>
                         <button className={styles.btnSecondary} onClick={props.handleAbout}>About</button>
                         <button className={styles.btnSecondary} onClick={props.handleStore}>Store</button>
-                        <button className={styles.btnPrimary}>Sign Up</button>
+                        <button className={styles.btnPrimary} onClick={props.handleSignIn}>Sign Up</button>
                     </nav>
                 </div>
             </div>

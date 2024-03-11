@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 
 // Components
-import About from './components/About';
+import SignIn from './components/SignIn';
 import Home from './components/Home';
+import About from './components/About';
 import Store from './components/Store';
 
 import Header from './components/Header';
@@ -19,8 +20,13 @@ function App() {
   const [signIn, setSignIn] = useState(false);
 
   // Handle Navigation
-
-  if (home === true) {
+  if (signIn === true) {
+    return (
+      <>
+        <SignIn />
+      </>
+    )
+  } else if (home === true) {
     return (
       <>
         <Header 

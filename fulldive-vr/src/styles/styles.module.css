@@ -84,6 +84,14 @@ h1, h2, h3, p, li {
     border: 2px solid hsla(90, 20%, 90%, 1);
 }
 
+.field {
+    width: 80%;
+    height: 2rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
 
 /* React Components
 ================================================= */
@@ -100,6 +108,7 @@ h1, h2, h3, p, li {
 .headerGrid {
     display: grid;
     grid-template-columns: repeat(12, auto);
+    gap: 0.5rem;
 }
 
 .block {
