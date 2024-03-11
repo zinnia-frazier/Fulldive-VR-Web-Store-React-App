@@ -110,6 +110,13 @@ h1, h2, h3, p, li {
 .block img {
     width: 100%;
 }
+@media only screen and (max-width: 480px) {
+    .block {
+        width: 100%;
+        margin: 0;
+        border: 2px solid red;
+    }
+}
 
 .card {
     background-color: hsla(270, 20%, 80%, 1);
